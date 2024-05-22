@@ -1,0 +1,64 @@
+@import '../../styles/variables';
+.productcard {
+  // max-width: 308px;
+  margin: 0 8px;
+  @media (max-width: $breakpoint-small) {
+    width: 90%;
+    margin: 0;
+  }
+  &__image {
+    width: 100%;
+  }
+  &__content {
+    padding: 8px 24px 0;
+  }
+  &__colors {
+    display: flex;
+  }
+  &__color {
+    font-size: 0;
+    width: 27px;
+    height: 27px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-right: 8px;
+    &--active {
+      border: 1px solid $color-black;
+    }
+    &--laranja {
+      background-color: #DEAC71;
+    }
+    &--vermelho {
+      background-color: #D37164;
+    }
+    &--azul-claro {
+      background-color: #6497D3;
+    }
+    &--azul-escuro {
+      background-color: #3C3B79;
+    }
+  }
+  &__price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  &__name {
+    font-size: $font-size-base;
+    margin-top: 8px;
+  }
+  &__description {
+    font-size: $font-size-small;
+    margin-top: 8px;
+  }
+  &__buybutton {
+    width: 254px;
+    height: 35px;
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    font-size: $font-size-base;
+    color: $color-white;
+  }
+}

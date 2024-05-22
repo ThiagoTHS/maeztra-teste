@@ -1,0 +1,57 @@
+$color-primary: #FAA500;
+$color-secondary: #2ecc71;
+
+$color-black: #353535;
+$color-white: #FFFFFF;
+$color-gray: #EFEFEF;
+
+$color-text: $color-black;
+$color-background: #f1f1f1;
+$color-link: #2980b9;
+$color-link-hover: darken($color-link, 10%);
+
+// Espaçamento
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 24px;
+$spacing-xlarge: 32px;
+
+// Fontes
+$font-family-primary: 'Titillium Web', sans-serif;
+$font-family-code: 'Fira Code', monospace;
+$font-size-base: 16px;
+$font-size-smaller: 10px;
+$font-size-small: 12px;
+$font-size-medium: 14px;
+$font-size-large: 18px;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Formatação de Fonte
+$line-height-base: 1.5;
+$text-transform-uppercase: uppercase;
+$text-transform-lowercase: lowercase;
+$text-transform-capitalize: capitalize;
+
+// Breakpoints para responsividade
+$breakpoint-small: 480px;  // Para dispositivos móveis pequenos
+$breakpoint-medium: 768px; // Para tablets
+$breakpoint-large: 1024px; // Para desktops pequenos
+$breakpoint-xlarge: 1200px; // Para desktops grandes
+
+// Exemplos de uso:
+@media (max-width: $breakpoint-small) {
+    // Estilos para dispositivos móveis pequenos
+}
+
+@media (max-width: $breakpoint-medium) {
+    // Estilos para tablets
+}
+
+@media (min-width: $breakpoint-large) {
+    // Estilos para desktops pequenos e maiores
+}
+
+@media (min-width: $breakpoint-xlarge) {
+    // Estilos para desktops grandes
+}

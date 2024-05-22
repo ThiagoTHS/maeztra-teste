@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+.socialmedia {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color-black;
+  padding: 16px 0;
+  @media (max-width: $breakpoint-small) {
+    padding: 24px 0;
+    flex-direction: column;
+  }
+
+  &__medias {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @media (max-width: $breakpoint-small) {
+      margin-bottom: 16px;
+    }
+    a {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: $breakpoint-small) {
+      margin-bottom: 16px;
+    }
+    img {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__dev {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    >div {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+      h5 {
+        font-size: 10px;
+        color: $color-white;
+      }
+    }
+  }
+}

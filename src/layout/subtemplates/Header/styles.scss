@@ -1,0 +1,176 @@
+@import '../../styles/variables';
+@import '../../styles/reset';
+@import '../../styles/normalize';
+
+
+.header {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  // Topbar
+  &__topbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    background-color: $color-black;
+    font-size: $font-size-small;
+    color: $color-white;
+    text-align: center;
+    @media (max-width: 600px) {
+      font-size: $font-size-smaller;
+    }
+  }
+  // Content
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 88px;
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.08);
+
+  }
+  @media (max-width: $breakpoint-small) {
+    &__menu-mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+      width: 32px;
+      padding: 0;
+      border: 0;
+      background: none;
+      img {
+        
+      }
+    }
+    &__logo-link {
+      max-width: 110px;
+      width: 100%;
+    }
+    &__logo-image {
+      max-width: 110px;
+      width: 100%;
+    }
+    &__busca-submit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+      width: 32px;
+      padding: 0;
+      border: 0;
+      background: none;
+    }
+    &__button-minicart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 32px;
+      width: 32px;
+      padding: 0;
+      border: 0;
+      background: none;
+    }
+  }
+  @media (min-width: $breakpoint-large) {
+    // logo
+    &__logo-link {
+      max-width: 147px;
+      width: 100%;
+    }
+    &__logo-image {
+      max-width: 147px;
+      width: 100%;
+    }
+    // Busca
+    &__busca {
+      @media (min-width: 601px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 791px;
+        width: 100%;
+        height: 40px;
+        background-color: $color-gray;
+        border-radius: 8px;
+      }
+    }
+    &__busca-input {
+      @media (min-width: 601px) {
+        flex: 1 1 auto;
+        height: 40px;
+        padding-left: $spacing-xlarge;
+        background-color: transparent;
+        border-radius: 8px;
+        border: 0;
+        font-size: $font-size-medium;
+        color: $color-black;
+        &:focus {
+          border: 0;
+          outline: 0;
+        }
+      }
+    }
+    &__busca-submit {
+      @media (min-width: 601px) {
+        flex: 0 0 119px;
+        height: 40px;
+        background-color: $color-primary;
+        border-radius: 8px;
+        border: 0;
+        border-color: $color-primary;
+        font-size: $font-size-medium;
+        color: $color-white;
+        cursor: pointer;
+      }
+    }
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 422px;
+      width: 100%;
+      
+      li {
+        max-width: 134px;
+        width: 100%;
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+  
+          width: 100%;
+          height: 46px;
+          padding: 0;
+          
+          border: 0;
+          border-radius: 8px;
+          background-color: transparent;
+          font-size: $font-size-medium;
+          &.header__button-minicart {
+            border: 1px solid $color-primary;
+          }
+          &:hover {
+            border: 1px solid $color-primary;
+          }
+          cursor: pointer;
+          img{
+            max-width: 16px;
+            width: 100%;
+            margin-right: $spacing-small;
+          }
+          span {
+  
+          }
+        }
+      }
+    }
+    &__menu {
+      height: 48px;
+    }
+  }
+
+}
